@@ -4,13 +4,13 @@ import random
 import time
 import numpy as np
 
-#initialize
-	pixel_pin = board.D18
-	num_pixels = 149
-	ORDER = neopixel.GRB 
-	pixels = neopixel.NeoPixel(
-	    pixel_pin, num_pixels, auto_write=False, pixel_order=ORDER
-	)
+#initialize pixels
+pixel_pin = board.D18
+num_pixels = 149
+ORDER = neopixel.GRB 
+pixels = neopixel.NeoPixel(
+    pixel_pin, num_pixels, auto_write=False, pixel_order=ORDER
+)
 
 def main():
 	#set speed of runner in seconds
