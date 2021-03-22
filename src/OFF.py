@@ -1,10 +1,11 @@
 import board
 import neopixel
+import sys
 
 #initialize
 pixel_pin = board.D10
-num_pixels = 149
-ORDER = neopixel.GRB 
+num_pixels = sys.argv[1]
+ORDER = neopixel.RGB 
 pixels = neopixel.NeoPixel(
     pixel_pin, num_pixels, auto_write=False, pixel_order=ORDER
 )
