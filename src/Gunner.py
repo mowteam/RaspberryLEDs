@@ -22,8 +22,8 @@ def main():
 	pixels[0] = color
 
 	#shoot pixel
+	i = num_pixels
 	while True:
-		i = num_pixels
 		pixels[1] =  color
 		pixels.show()
 		time.sleep(0.05)
