@@ -1,10 +1,7 @@
 import board
 import neopixel
 import numpy as np
-from settings import neopixelObject
-
-#initialize pixels
-pixels = neopixelObject()
+from settings import num_pixels, pixels
 
 #turn all lights off
 pixels.fill((0, 0, 0))

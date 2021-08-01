@@ -5,10 +5,7 @@ import time
 import board
 import neopixel
 import numpy as np
-from settings import neopixelObject
-
-#initialize pixels
-pixels = neopixelObject()
+from settings import num_pixels, pixels
 
 #transition speed
 speed = 0.02 #seconds per transition

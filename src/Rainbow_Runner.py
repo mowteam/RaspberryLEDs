@@ -4,10 +4,7 @@ import random
 import time
 import numpy as np
 from randomColorRainbow import random_color
-from settings import neopixelObject
-
-#initialize pixels
-pixels = neopixelObject()
+from settings import num_pixels, pixels 
 
 def main():
 	#set speed of runner in seconds

@@ -3,10 +3,7 @@ import neopixel
 import random
 import time
 from randomColorRainbow import random_color
-from settings import neopixelObject
-
-#initialize pixels
-pixels = neopixelObject()
+from settings import num_pixels, pixels
 
 def main():
 	#make all red

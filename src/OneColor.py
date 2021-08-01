@@ -1,9 +1,6 @@
 import board
 import neopixel
-from settings import neopixelObject
-
-#initialize pixels
-pixels = neopixelObject()
+from settings import num_pixels, pixels
 
 i = input("Enter a color (as R, G, B): ")
 color = tuple(int(x) for x in i.split(","))
