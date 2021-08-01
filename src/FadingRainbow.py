@@ -1,3 +1,5 @@
+#not my code
+#Credit: Adafruit
 # Simple test for NeoPixels on Raspberry Pi
 import time
 import board
