@@ -12,7 +12,7 @@ def shoot():
 	pixels.show()
 
 	#initialize shooter
-	length = 1 #length of bullet (LEDs)
+	length = 10 #length of bullet (LEDs)
 	color = random_color()
 	change_color(0, length, color)
 
@@ -21,7 +21,7 @@ def shoot():
 		change_color(i, length, color) #move bullet
 		change_color(i - length, length, background) #delete path of bullet
 		pixels.show()
-		time.sleep(0.05)
+		time.sleep(0.2)
 
 def change_color(index, length, color):
 	for i in range(index, index + length):
