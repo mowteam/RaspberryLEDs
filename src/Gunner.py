@@ -1,8 +1,9 @@
+import board
+import neopixel
+import random
+import time
+from randomColorRainbow import random_color
 def main():
-	import board
-	import neopixel
-	import random
-	import time
 
 	#initialize
 	pixel_pin = board.D10
@@ -37,14 +38,6 @@ def main():
 
 		#reduce range
 		i--
-
-
-def random_color():
-	r = random.randint(0, 255)
-	g = random.randint(0, 255)
-	b = random.randint(0, 255)
-	return [r, g, b]
-
 main()
 
 
