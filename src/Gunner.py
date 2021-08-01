@@ -3,16 +3,12 @@ import neopixel
 import random
 import time
 from randomColorRainbow import random_color
+from settings import neopixelObject
+
+#initialize pixels
+pixels = neopixelObject()
+
 def main():
-
-	#initialize
-	pixel_pin = board.D10
-	num_pixels = 149
-	ORDER = neopixel.GRB 
-	pixels = neopixel.NeoPixel(
-	    pixel_pin, num_pixels, auto_write=False, pixel_order=ORDER
-	)
-
 	#make all red
 	background = [255, 0, 0]
 	pixels.fill(background)

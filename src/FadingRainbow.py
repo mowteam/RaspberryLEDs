@@ -5,14 +5,10 @@ import time
 import board
 import neopixel
 import numpy as np
- 
+from settings import neopixelObject
+
 #initialize pixels
-pixel_pin = board.D18
-num_pixels = 150
-ORDER = neopixel.RGB 
-pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER
-)
+pixels = neopixelObject()
 
 #transition speed
 speed = 0.02 #seconds per transition

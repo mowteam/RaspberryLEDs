@@ -1,14 +1,10 @@
 import board
 import neopixel
 import numpy as np
+from settings import neopixelObject
 
 #initialize pixels
-pixel_pin = board.D18
-num_pixels = 149
-ORDER = neopixel.RGB 
-pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, auto_write=False, pixel_order=ORDER
-)
+pixels = neopixelObject()
 
 #turn all lights off
 pixels.fill((0, 0, 0))
