@@ -21,5 +21,3 @@ def random_color():
 
 
 	return color
-
-print(random_color())
