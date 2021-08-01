@@ -17,7 +17,7 @@ def shoot():
 	change_color(0, length, color)
 
 	#shoot pixel
-	for i in range(length, i):
+	for i in range(length, num_pixels):
 		change_color(i, length, color) #move bullet
 		change_color(i - length, length, background) #delete path of bullet
 		pixels.show()
