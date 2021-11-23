@@ -8,7 +8,7 @@ import numpy as np
 from settings import num_pixels, pixels
 
 #transition speed
-speed = 0.02 #seconds per transition
+speed = 0.01 #seconds per transition
  
  
 def wheel(pos):
