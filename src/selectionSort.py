@@ -4,13 +4,13 @@ from settings import num_pixels, pixels
 from randomColorRainbow import random_color
 def main():
 	for i in range(num_pixels):
-		#pixels[i] = random_color()
-		pixels[i] = [255 - 2*i, 0, 100]
+		pixels[i] = random_color()
+		#pixels[i] = [255 - 2*i, 0, 100]
 	pause = float(input("Speed/Pause Time: "))
 	selectionSort(pause)
 
 def value(color):
-	return color[0]
+	return color[0] * 255 * 255 + color[1] * 255 + color[2]
 
 def selectionSort(pause): #ascending order
 	for i in range(num_pixels):
