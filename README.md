@@ -19,6 +19,7 @@ Controlling the LEDs relies on the neopixel and board python libraries. Each pro
         pixel_pin, num_pixels, auto_write=False, pixel_order=ORDER
     )
 
+
 Once the neopixel object is created, the color of the LEDs can be changed by assigning new values to 'pixels.' 'pixels' can be treated as a list of tuples, representing RGB. If auto_write = False, pixels.show() must be run to display the new values of 'pixels.' If auto_write = True or is not specified, the LEDs will instantly change. I recommend setting auto_write to False.
 
 # Location of Pixels
